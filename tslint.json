@@ -1,0 +1,96 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "eofline": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "trailing-comma": false,
+    "no-trailing-whitespace": false,
+    "no-consecutive-blank-lines": false,
+    "max-line-length": [
+      true,
+      300
+    ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "ban-keywords"
+    ],
+    "one-variable-per-declaration": false,
+    "no-var-requires": false,
+    "object-literal-shorthand": false,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-instance-field",
+          "public-constructor",
+          "private-static-field",
+          "private-instance-field",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "insecure-random": true,
+    "no-banned-terms": true,
+    "no-cookies": true,
+    "no-delete-expression": true,
+    "no-disable-auto-sanitization": true,
+    "no-document-domain": true,
+    "no-document-write": true,
+    "no-eval": true,
+    "no-exec-script": true,
+    "no-function-constructor-with-string-args": true,
+    "no-http-string": [
+      true,
+      "http://www.example.com/?.*",
+      "http://www.examples.com/?.*"
+    ],
+    "no-inner-html": true,
+    "no-octal-literal": true,
+    "no-reserved-keywords": true,
+    "no-string-based-set-immediate": true,
+    "no-string-based-set-interval": true,
+    "no-string-based-set-timeout": true,
+    "non-literal-require": true,
+    "possible-timing-attack": true,
+    "member-access": false,
+    "no-shadowed-variable": false,
+    "no-console": [
+      false,
+      "log",
+      "info",
+      "warn",
+      "error"
+    ],
+    "comment-format": false,
+    "only-arrow-functions": true,
+    "array-type": false,
+    "jsx-alignment": false,
+    "jsx-wrap-multiline": false,
+    "jsx-no-multiline-js": false,
+    "jsx-no-lambda": false,
+    "file-header": [
+      true,
+      "This unpublished material is proprietary to Anthony Hunter."
+    ],
+    "unified-signatures": false,
+    "callable-types": false,
+    "ban-types": false
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node-modules/**"
+    ]
+  }
+}
